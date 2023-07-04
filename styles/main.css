@@ -1,0 +1,29 @@
+.wrapper {
+  overflow: auto;
+  background: url(../png/bg.png);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 70px auto auto;
+}
+
+.balance_cont {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.home {
+  position: absolute;
+  left: 180px;
+  top: 20px;
+}
+
+.shop_link {
+  position: absolute;
+  left: 240px;
+  top: 20px;
+}

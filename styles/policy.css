@@ -1,0 +1,30 @@
+body {
+  color: white;
+}
+
+.wrapper {
+  padding: 15px;
+}
+
+.link {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 250px;
+  height: 68px;
+
+  font-size: 32px;
+}
+
+.text {
+  margin-bottom: 80px;
+}
+
+.title {
+  font-size: 28px;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,173 @@
+.wrapper {
+  padding-top: 8px;
+}
+
+.balance_field {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.slot_cont {
+  display: flex;
+  justify-content: center;
+}
+
+.slot {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 270px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
+}
+
+.slot_cont img {
+  margin: 7.5px 12.5px 7.5px;
+  width: 75px;
+  height: 75px;
+}
+
+.slot_pics {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+
+  position: absolute;
+  top: 0;
+
+  transition: top 4s ease;
+}
+
+.home {
+  position: absolute;
+  right: 20px;
+
+  width: 79px;
+  height: 29px;
+
+  text-align: center;
+  line-height: 29px;
+}
+
+.warning {
+  position: absolute;
+  z-index: 2;
+  left: -50%;
+  top: 25%;
+  transition: left ease 0.5s;
+
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(180deg, #303030 0%, #292929 100%);
+  border-radius: 12px;
+
+  text-align: center;
+  font-size: 36px;
+}
+
+.warning .button {
+  margin: 20px auto;
+  background: linear-gradient(180deg, #3df12c 0%, #30c922 100%);
+  border-radius: 12px;
+  width: 65%;
+  height: 59px;
+  line-height: 59px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.bet_option {
+  width: 106px;
+  height: 52px;
+
+  text-align: center;
+  line-height: 52px;
+  font-size: 24px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(46, 46, 46, 0.6) 0%,
+    rgba(54, 54, 54, 0.6) 100%
+  );
+
+  transition: box-shadow ease 0.5s;
+}
+
+.bet_option.chosen,
+.bet_option.anim {
+  box-shadow: inset 0 0 10px #ffffff;
+}
+
+.bet_button {
+  width: 240px;
+  height: 52px;
+
+  text-align: center;
+  line-height: 52px;
+  font-size: 36px;
+
+  transition: box-shadow ease 0.5s;
+}
+
+@media screen and (max-width: 790px) {
+  .slot {
+    width: 80px;
+  }
+
+  .lepr {
+    left: 600px;
+  }
+
+  .slot_cont img {
+    margin: 7.5px 5px 7.5px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .slot_cont {
+    width: 70%;
+  }
+
+  .bet_option {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .bet_button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+
+  .warning {
+    font-size: 24px;
+  }
+
+  .warning .button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-height:340px) {
+  .menu {
+    height: 240px;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
